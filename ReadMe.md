@@ -1,29 +1,11 @@
-# User Management with Docker
-
-This project provides a Dockerized solution for managing user accounts and groups on a Linux system. It includes scripts for creating users and groups based on a configuration file.
-
-## Files
-
-- `Dockerfile`: Docker configuration file to build the image.
-- `create_users.sh`: Bash script to create users and groups.
-- `users.txt`: Configuration file containing the list of users and their groups.
-
-## Prerequisites
-
-- Docker installed on your system.
-
-## Usage
-
 # User Management Script
 
 This project provides a bash script for managing user accounts and groups on a Linux system. It includes scripts for creating and deleting users and groups based on a configuration file.
-It also includes a Dockerized solution.
 
 ## Files
 
-- `Dockerfile`: Docker configuration file to build the image.
 - `create_users.sh`: Bash script to create users and groups.
-- `users.txt`: Configuration file containing the list of users and their groups.
+- `ReadMe.md`: A note on how to run the script.
 
 ## Usage
 
@@ -57,24 +39,6 @@ chmod +x create_users.sh
 ```bash
 sudo ./create_users.sh users.txt
 ```
-
-### Building the Docker Image
-
-To build the Docker image, run the following command in the directory containing the Dockerfile and scripts:
-
-```bash
-docker build -t user-management .
-```
-
-## Running the Container
-
-To run the container and execute the user creation script, use the following command:
-
-```bash
-docker run --rm --name user-management-container user-management
-```
-
-
 
 ## Learn More
 
